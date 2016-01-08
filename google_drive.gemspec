@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
 
   s.name = "google_drive"
-  s.version = "1.0.5"
+  s.version = "1.0.6"
   s.authors = ["Hiroshi Ichikawa"]
   s.email = ["gimite+github@gmail.com"]
   s.summary = "A library to read/write files/spreadsheets in Google Drive/Docs."
@@ -17,6 +17,8 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--main", "README.rdoc"]
 
   s.add_dependency("nokogiri", [">= 1.4.4", "!= 1.5.1", "!= 1.5.2"])
+  s.add_dependency("sax-machine", [">= 1.3.2"])
+
   s.add_dependency("oauth", [">= 0.3.6"])
   s.add_dependency("oauth2", [">= 0.5.0"])
   # TODO Switch to 0.9 API once it is released:
